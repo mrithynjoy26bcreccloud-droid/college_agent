@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(api|qa|monitoring|health|admin|token|audio)(.*)",
+      "destination": "api/index.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "frontend/dist/$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/"
+    }
+  ]
+}
